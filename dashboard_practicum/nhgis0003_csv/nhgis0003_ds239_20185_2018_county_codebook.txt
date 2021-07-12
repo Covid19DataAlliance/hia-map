@@ -1,0 +1,642 @@
+--------------------------------------------------------------------------------
+Codebook for NHGIS data file 'nhgis0003_ds239_20185_2018_county'
+--------------------------------------------------------------------------------
+ 
+Contents
+    - Data Summary
+    - Data Dictionary
+    - Citation and Use
+ 
+Additional documentation on NHGIS data sources is available at: 
+    https://www.nhgis.org/documentation/tabular-data 
+ 
+--------------------------------------------------------------------------------
+Data Summary
+--------------------------------------------------------------------------------
+ 
+Year:             2014-2018
+Geographic level: County (by State)
+Dataset:          2018 American Community Survey: 5-Year Data [2014-2018, Block Groups & Larger Areas]
+   NHGIS code:    2014_2018_ACS5a
+   NHGIS ID:      ds239
+Breakdown(s):     Geographic Subarea:
+                     Total area (00)
+Data type(s):     (E) Estimates
+                  (M) Margins of error
+ 
+Tables:
+ 
+1. Sex by Age
+   Universe:    Total population
+   Source code: B01001
+   NHGIS code:  AJWB
+ 
+2. Total Population
+   Universe:    Total population
+   Source code: B01003
+   NHGIS code:  AJWM
+ 
+3. Black or African American Alone or in Combination with One or More Other Races
+   Universe:    Black or African American alone or in combination with one or more other races
+   Source code: B02009
+   NHGIS code:  AJWQ
+ 
+4. Asian Alone or in Combination with One or More Other Races
+   Universe:    Asian alone or in combination with one or more other races
+   Source code: B02011
+   NHGIS code:  AJWS
+ 
+5. Hispanic or Latino Origin
+   Universe:    Total population
+   Source code: B03003
+   NHGIS code:  AJWW
+ 
+6. Means of Transportation to Work
+   Universe:    Workers 16 years and over
+   Source code: B08301
+   NHGIS code:  AJXC
+ 
+7. Educational Attainment for the Population 25 Years and Over
+   Universe:    Population 25 years and over
+   Source code: B15003
+   NHGIS code:  AJYP
+ 
+8. Median Household Income in the Past 12 Months (in 2018 Inflation-Adjusted Dollars)
+   Universe:    Households
+   Source code: B19013
+   NHGIS code:  AJZA
+ 
+9. Per Capita Income in the Past 12 Months (in 2018 Inflation-Adjusted Dollars)
+   Universe:    Total population
+   Source code: B19301
+   NHGIS code:  AJ0E
+ 
+10. Sex by Occupation for the Civilian Employed Population 16 Years and Over
+    Universe:    Civilian employed population 16 years and over
+    Source code: C24010
+    NHGIS code:  AJ1F
+ 
+--------------------------------------------------------------------------------
+Data Dictionary
+--------------------------------------------------------------------------------
+ 
+Context Fields 
+        GISJOIN:     GIS Join Match Code
+        YEAR:        Data File Year
+        REGIONA:     Region Code
+        DIVISIONA:   Division Code
+        STATE:       State Name
+        STATEA:      State Code
+        COUNTY:      County Name
+        COUNTYA:     County Code
+        COUSUBA:     County Subdivision Code
+        PLACEA:      Place Code
+        TRACTA:      Census Tract Code
+        BLKGRPA:     Block Group Code
+        CONCITA:     Consolidated City Code
+        AIANHHA:     American Indian Area/Alaska Native Area/Hawaiian Home Land Code
+        RES_ONLYA:   American Indian Area/Alaska Native Area (Reservation or Statistical Entity Only) Code
+        TRUSTA:      American Indian Area (Off-Reservation Trust Land Only)/Hawaiian Home Land Code
+        AITSCEA:     Tribal Subdivision/Remainder Code
+        ANRCA:       Alaska Native Regional Corporation Code
+        CBSAA:       Metropolitan Statistical Area/Micropolitan Statistical Area Code
+        CSAA:        Combined Statistical Area Code
+        METDIVA:     Metropolitan Division Code
+        NECTAA:      New England City and Town Area Code
+        CNECTAA:     Combined New England City and Town Area Code
+        NECTADIVA:   New England City and Town Area Division Code
+        UAA:         Urban Area Code
+        CDCURRA:     Congressional District (2019-2021, 116th Congress) Code
+        SLDUA:       State Legislative District (Upper Chamber) Code
+        SLDLA:       State Legislative District (Lower Chamber) Code
+        ZCTA5A:      5-Digit ZIP Code Tabulation Area Code
+        SUBMCDA:     Subminor Civil Division Code
+        SDELMA:      School District (Elementary)/Remainder Code
+        SDSECA:      School District (Secondary)/Remainder Code
+        SDUNIA:      School District (Unified)/Remainder Code
+        PUMA5A:      Public Use Microdata Sample Area (PUMA) Code
+        BTTRA:       Tribal Census Tract Code
+        BTBGA:       Tribal Block Group Code
+ 
+Data Type (E):
+    Estimates
+ 
+        NAME_E:      Area Name
+ 
+    Table 1:     Sex by Age
+    Universe:    Total population
+    Source code: B01001
+    NHGIS code:  AJWB
+        AJWBE001:    Total
+        AJWBE002:    Male
+        AJWBE003:    Male: Under 5 years
+        AJWBE004:    Male: 5 to 9 years
+        AJWBE005:    Male: 10 to 14 years
+        AJWBE006:    Male: 15 to 17 years
+        AJWBE007:    Male: 18 and 19 years
+        AJWBE008:    Male: 20 years
+        AJWBE009:    Male: 21 years
+        AJWBE010:    Male: 22 to 24 years
+        AJWBE011:    Male: 25 to 29 years
+        AJWBE012:    Male: 30 to 34 years
+        AJWBE013:    Male: 35 to 39 years
+        AJWBE014:    Male: 40 to 44 years
+        AJWBE015:    Male: 45 to 49 years
+        AJWBE016:    Male: 50 to 54 years
+        AJWBE017:    Male: 55 to 59 years
+        AJWBE018:    Male: 60 and 61 years
+        AJWBE019:    Male: 62 to 64 years
+        AJWBE020:    Male: 65 and 66 years
+        AJWBE021:    Male: 67 to 69 years
+        AJWBE022:    Male: 70 to 74 years
+        AJWBE023:    Male: 75 to 79 years
+        AJWBE024:    Male: 80 to 84 years
+        AJWBE025:    Male: 85 years and over
+        AJWBE026:    Female
+        AJWBE027:    Female: Under 5 years
+        AJWBE028:    Female: 5 to 9 years
+        AJWBE029:    Female: 10 to 14 years
+        AJWBE030:    Female: 15 to 17 years
+        AJWBE031:    Female: 18 and 19 years
+        AJWBE032:    Female: 20 years
+        AJWBE033:    Female: 21 years
+        AJWBE034:    Female: 22 to 24 years
+        AJWBE035:    Female: 25 to 29 years
+        AJWBE036:    Female: 30 to 34 years
+        AJWBE037:    Female: 35 to 39 years
+        AJWBE038:    Female: 40 to 44 years
+        AJWBE039:    Female: 45 to 49 years
+        AJWBE040:    Female: 50 to 54 years
+        AJWBE041:    Female: 55 to 59 years
+        AJWBE042:    Female: 60 and 61 years
+        AJWBE043:    Female: 62 to 64 years
+        AJWBE044:    Female: 65 and 66 years
+        AJWBE045:    Female: 67 to 69 years
+        AJWBE046:    Female: 70 to 74 years
+        AJWBE047:    Female: 75 to 79 years
+        AJWBE048:    Female: 80 to 84 years
+        AJWBE049:    Female: 85 years and over
+ 
+    Table 2:     Total Population
+    Universe:    Total population
+    Source code: B01003
+    NHGIS code:  AJWM
+        AJWME001:    Total
+ 
+    Table 3:     Black or African American Alone or in Combination with One or More Other Races
+    Universe:    Black or African American alone or in combination with one or more other races
+    Source code: B02009
+    NHGIS code:  AJWQ
+        AJWQE001:    Total
+ 
+    Table 4:     Asian Alone or in Combination with One or More Other Races
+    Universe:    Asian alone or in combination with one or more other races
+    Source code: B02011
+    NHGIS code:  AJWS
+        AJWSE001:    Total
+ 
+    Table 5:     Hispanic or Latino Origin
+    Universe:    Total population
+    Source code: B03003
+    NHGIS code:  AJWW
+        AJWWE001:    Total
+        AJWWE002:    Not Hispanic or Latino
+        AJWWE003:    Hispanic or Latino
+ 
+    Table 6:     Means of Transportation to Work
+    Universe:    Workers 16 years and over
+    Source code: B08301
+    NHGIS code:  AJXC
+        AJXCE001:    Total
+        AJXCE002:    Car, truck, or van
+        AJXCE003:    Car, truck, or van: Drove alone
+        AJXCE004:    Car, truck, or van: Carpooled
+        AJXCE005:    Car, truck, or van: Carpooled: In 2-person carpool
+        AJXCE006:    Car, truck, or van: Carpooled: In 3-person carpool
+        AJXCE007:    Car, truck, or van: Carpooled: In 4-person carpool
+        AJXCE008:    Car, truck, or van: Carpooled: In 5- or 6-person carpool
+        AJXCE009:    Car, truck, or van: Carpooled: In 7-or-more-person carpool
+        AJXCE010:    Public transportation (excluding taxicab)
+        AJXCE011:    Public transportation (excluding taxicab): Bus or trolley bus
+        AJXCE012:    Public transportation (excluding taxicab): Streetcar or trolley car (carro publico in Puerto Rico)
+        AJXCE013:    Public transportation (excluding taxicab): Subway or elevated
+        AJXCE014:    Public transportation (excluding taxicab): Railroad
+        AJXCE015:    Public transportation (excluding taxicab): Ferryboat
+        AJXCE016:    Taxicab
+        AJXCE017:    Motorcycle
+        AJXCE018:    Bicycle
+        AJXCE019:    Walked
+        AJXCE020:    Other means
+        AJXCE021:    Worked at home
+ 
+    Table 7:     Educational Attainment for the Population 25 Years and Over
+    Universe:    Population 25 years and over
+    Source code: B15003
+    NHGIS code:  AJYP
+        AJYPE001:    Total
+        AJYPE002:    No schooling completed
+        AJYPE003:    Nursery school
+        AJYPE004:    Kindergarten
+        AJYPE005:    1st grade
+        AJYPE006:    2nd grade
+        AJYPE007:    3rd grade
+        AJYPE008:    4th grade
+        AJYPE009:    5th grade
+        AJYPE010:    6th grade
+        AJYPE011:    7th grade
+        AJYPE012:    8th grade
+        AJYPE013:    9th grade
+        AJYPE014:    10th grade
+        AJYPE015:    11th grade
+        AJYPE016:    12th grade, no diploma
+        AJYPE017:    Regular high school diploma
+        AJYPE018:    GED or alternative credential
+        AJYPE019:    Some college, less than 1 year
+        AJYPE020:    Some college, 1 or more years, no degree
+        AJYPE021:    Associate's degree
+        AJYPE022:    Bachelor's degree
+        AJYPE023:    Master's degree
+        AJYPE024:    Professional school degree
+        AJYPE025:    Doctorate degree
+ 
+    Table 8:     Median Household Income in the Past 12 Months (in 2018 Inflation-Adjusted Dollars)
+    Universe:    Households
+    Source code: B19013
+    NHGIS code:  AJZA
+        AJZAE001:    Median household income in the past 12 months (in 2018 inflation-adjusted dollars)
+ 
+    Table 9:     Per Capita Income in the Past 12 Months (in 2018 Inflation-Adjusted Dollars)
+    Universe:    Total population
+    Source code: B19301
+    NHGIS code:  AJ0E
+        AJ0EE001:    Per capita income in the past 12 months (in 2018 inflation-adjusted dollars)
+ 
+    Table 10:    Sex by Occupation for the Civilian Employed Population 16 Years and Over
+    Universe:    Civilian employed population 16 years and over
+    Source code: C24010
+    NHGIS code:  AJ1F
+        AJ1FE001:    Total
+        AJ1FE002:    Male
+        AJ1FE003:    Male: Management, business, science, and arts occupations
+        AJ1FE004:    Male: Management, business, science, and arts occupations: Management, business, and financial occupations
+        AJ1FE005:    Male: Management, business, science, and arts occupations: Management, business, and financial occupations: Management occupations
+        AJ1FE006:    Male: Management, business, science, and arts occupations: Management, business, and financial occupations: Business and financial operations occupations
+        AJ1FE007:    Male: Management, business, science, and arts occupations: Computer, engineering, and science occupations
+        AJ1FE008:    Male: Management, business, science, and arts occupations: Computer, engineering, and science occupations: Computer and mathematical occupations
+        AJ1FE009:    Male: Management, business, science, and arts occupations: Computer, engineering, and science occupations: Architecture and engineering occupations
+        AJ1FE010:    Male: Management, business, science, and arts occupations: Computer, engineering, and science occupations: Life, physical, and social science occupations
+        AJ1FE011:    Male: Management, business, science, and arts occupations: Education, legal, community service, arts, and media occupations
+        AJ1FE012:    Male: Management, business, science, and arts occupations: Education, legal, community service, arts, and media occupations: Community and social service occupations
+        AJ1FE013:    Male: Management, business, science, and arts occupations: Education, legal, community service, arts, and media occupations: Legal occupations
+        AJ1FE014:    Male: Management, business, science, and arts occupations: Education, legal, community service, arts, and media occupations: Educational instruction, and library occupations
+        AJ1FE015:    Male: Management, business, science, and arts occupations: Education, legal, community service, arts, and media occupations: Arts, design, entertainment, sports, and media occupations
+        AJ1FE016:    Male: Management, business, science, and arts occupations: Healthcare practitioners and technical occupations
+        AJ1FE017:    Male: Management, business, science, and arts occupations: Healthcare practitioners and technical occupations: Health diagnosing and treating practitioners and other technical occupations
+        AJ1FE018:    Male: Management, business, science, and arts occupations: Healthcare practitioners and technical occupations: Health technologists and technicians
+        AJ1FE019:    Male: Service occupations
+        AJ1FE020:    Male: Service occupations: Healthcare support occupations
+        AJ1FE021:    Male: Service occupations: Protective service occupations
+        AJ1FE022:    Male: Service occupations: Protective service occupations: Firefighting and prevention, and other protective service workers including supervisors
+        AJ1FE023:    Male: Service occupations: Protective service occupations: Law enforcement workers including supervisors
+        AJ1FE024:    Male: Service occupations: Food preparation and serving related occupations
+        AJ1FE025:    Male: Service occupations: Building and grounds cleaning and maintenance occupations
+        AJ1FE026:    Male: Service occupations: Personal care and service occupations
+        AJ1FE027:    Male: Sales and office occupations
+        AJ1FE028:    Male: Sales and office occupations: Sales and related occupations
+        AJ1FE029:    Male: Sales and office occupations: Office and administrative support occupations
+        AJ1FE030:    Male: Natural resources, construction, and maintenance occupations
+        AJ1FE031:    Male: Natural resources, construction, and maintenance occupations: Farming, fishing, and forestry occupations
+        AJ1FE032:    Male: Natural resources, construction, and maintenance occupations: Construction and extraction occupations
+        AJ1FE033:    Male: Natural resources, construction, and maintenance occupations: Installation, maintenance, and repair occupations
+        AJ1FE034:    Male: Production, transportation, and material moving occupations
+        AJ1FE035:    Male: Production, transportation, and material moving occupations: Production occupations
+        AJ1FE036:    Male: Production, transportation, and material moving occupations: Transportation occupations
+        AJ1FE037:    Male: Production, transportation, and material moving occupations: Material moving occupations
+        AJ1FE038:    Female
+        AJ1FE039:    Female: Management, business, science, and arts occupations
+        AJ1FE040:    Female: Management, business, science, and arts occupations: Management, business, and financial occupations
+        AJ1FE041:    Female: Management, business, science, and arts occupations: Management, business, and financial occupations: Management occupations
+        AJ1FE042:    Female: Management, business, science, and arts occupations: Management, business, and financial occupations: Business and financial operations occupations
+        AJ1FE043:    Female: Management, business, science, and arts occupations: Computer, engineering, and science occupations
+        AJ1FE044:    Female: Management, business, science, and arts occupations: Computer, engineering, and science occupations: Computer and mathematical occupations
+        AJ1FE045:    Female: Management, business, science, and arts occupations: Computer, engineering, and science occupations: Architecture and engineering occupations
+        AJ1FE046:    Female: Management, business, science, and arts occupations: Computer, engineering, and science occupations: Life, physical, and social science occupations
+        AJ1FE047:    Female: Management, business, science, and arts occupations: Education, legal, community service, arts, and media occupations
+        AJ1FE048:    Female: Management, business, science, and arts occupations: Education, legal, community service, arts, and media occupations: Community and social service occupations
+        AJ1FE049:    Female: Management, business, science, and arts occupations: Education, legal, community service, arts, and media occupations: Legal occupations
+        AJ1FE050:    Female: Management, business, science, and arts occupations: Education, legal, community service, arts, and media occupations: Educational instruction, and library occupations
+        AJ1FE051:    Female: Management, business, science, and arts occupations: Education, legal, community service, arts, and media occupations: Arts, design, entertainment, sports, and media occupations
+        AJ1FE052:    Female: Management, business, science, and arts occupations: Healthcare practitioners and technical occupations
+        AJ1FE053:    Female: Management, business, science, and arts occupations: Healthcare practitioners and technical occupations: Health diagnosing and treating practitioners and other technical occupations
+        AJ1FE054:    Female: Management, business, science, and arts occupations: Healthcare practitioners and technical occupations: Health technologists and technicians
+        AJ1FE055:    Female: Service occupations
+        AJ1FE056:    Female: Service occupations: Healthcare support occupations
+        AJ1FE057:    Female: Service occupations: Protective service occupations
+        AJ1FE058:    Female: Service occupations: Protective service occupations: Firefighting and prevention, and other protective service workers including supervisors
+        AJ1FE059:    Female: Service occupations: Protective service occupations: Law enforcement workers including supervisors
+        AJ1FE060:    Female: Service occupations: Food preparation and serving related occupations
+        AJ1FE061:    Female: Service occupations: Building and grounds cleaning and maintenance occupations
+        AJ1FE062:    Female: Service occupations: Personal care and service occupations
+        AJ1FE063:    Female: Sales and office occupations
+        AJ1FE064:    Female: Sales and office occupations: Sales and related occupations
+        AJ1FE065:    Female: Sales and office occupations: Office and administrative support occupations
+        AJ1FE066:    Female: Natural resources, construction, and maintenance occupations
+        AJ1FE067:    Female: Natural resources, construction, and maintenance occupations: Farming, fishing, and forestry occupations
+        AJ1FE068:    Female: Natural resources, construction, and maintenance occupations: Construction and extraction occupations
+        AJ1FE069:    Female: Natural resources, construction, and maintenance occupations: Installation, maintenance, and repair occupations
+        AJ1FE070:    Female: Production, transportation, and material moving occupations
+        AJ1FE071:    Female: Production, transportation, and material moving occupations: Production occupations
+        AJ1FE072:    Female: Production, transportation, and material moving occupations: Transportation occupations
+        AJ1FE073:    Female: Production, transportation, and material moving occupations: Material moving occupations
+ 
+Data Type (M):
+    Margins of error
+ 
+        NAME_M:      Area Name
+ 
+    Table 1:     Sex by Age
+    Universe:    Total population
+    Source code: B01001
+    NHGIS code:  AJWB
+        AJWBM001:    Total
+        AJWBM002:    Male
+        AJWBM003:    Male: Under 5 years
+        AJWBM004:    Male: 5 to 9 years
+        AJWBM005:    Male: 10 to 14 years
+        AJWBM006:    Male: 15 to 17 years
+        AJWBM007:    Male: 18 and 19 years
+        AJWBM008:    Male: 20 years
+        AJWBM009:    Male: 21 years
+        AJWBM010:    Male: 22 to 24 years
+        AJWBM011:    Male: 25 to 29 years
+        AJWBM012:    Male: 30 to 34 years
+        AJWBM013:    Male: 35 to 39 years
+        AJWBM014:    Male: 40 to 44 years
+        AJWBM015:    Male: 45 to 49 years
+        AJWBM016:    Male: 50 to 54 years
+        AJWBM017:    Male: 55 to 59 years
+        AJWBM018:    Male: 60 and 61 years
+        AJWBM019:    Male: 62 to 64 years
+        AJWBM020:    Male: 65 and 66 years
+        AJWBM021:    Male: 67 to 69 years
+        AJWBM022:    Male: 70 to 74 years
+        AJWBM023:    Male: 75 to 79 years
+        AJWBM024:    Male: 80 to 84 years
+        AJWBM025:    Male: 85 years and over
+        AJWBM026:    Female
+        AJWBM027:    Female: Under 5 years
+        AJWBM028:    Female: 5 to 9 years
+        AJWBM029:    Female: 10 to 14 years
+        AJWBM030:    Female: 15 to 17 years
+        AJWBM031:    Female: 18 and 19 years
+        AJWBM032:    Female: 20 years
+        AJWBM033:    Female: 21 years
+        AJWBM034:    Female: 22 to 24 years
+        AJWBM035:    Female: 25 to 29 years
+        AJWBM036:    Female: 30 to 34 years
+        AJWBM037:    Female: 35 to 39 years
+        AJWBM038:    Female: 40 to 44 years
+        AJWBM039:    Female: 45 to 49 years
+        AJWBM040:    Female: 50 to 54 years
+        AJWBM041:    Female: 55 to 59 years
+        AJWBM042:    Female: 60 and 61 years
+        AJWBM043:    Female: 62 to 64 years
+        AJWBM044:    Female: 65 and 66 years
+        AJWBM045:    Female: 67 to 69 years
+        AJWBM046:    Female: 70 to 74 years
+        AJWBM047:    Female: 75 to 79 years
+        AJWBM048:    Female: 80 to 84 years
+        AJWBM049:    Female: 85 years and over
+ 
+    Table 2:     Total Population
+    Universe:    Total population
+    Source code: B01003
+    NHGIS code:  AJWM
+        AJWMM001:    Total
+ 
+    Table 3:     Black or African American Alone or in Combination with One or More Other Races
+    Universe:    Black or African American alone or in combination with one or more other races
+    Source code: B02009
+    NHGIS code:  AJWQ
+        AJWQM001:    Total
+ 
+    Table 4:     Asian Alone or in Combination with One or More Other Races
+    Universe:    Asian alone or in combination with one or more other races
+    Source code: B02011
+    NHGIS code:  AJWS
+        AJWSM001:    Total
+ 
+    Table 5:     Hispanic or Latino Origin
+    Universe:    Total population
+    Source code: B03003
+    NHGIS code:  AJWW
+        AJWWM001:    Total
+        AJWWM002:    Not Hispanic or Latino
+        AJWWM003:    Hispanic or Latino
+ 
+    Table 6:     Means of Transportation to Work
+    Universe:    Workers 16 years and over
+    Source code: B08301
+    NHGIS code:  AJXC
+        AJXCM001:    Total
+        AJXCM002:    Car, truck, or van
+        AJXCM003:    Car, truck, or van: Drove alone
+        AJXCM004:    Car, truck, or van: Carpooled
+        AJXCM005:    Car, truck, or van: Carpooled: In 2-person carpool
+        AJXCM006:    Car, truck, or van: Carpooled: In 3-person carpool
+        AJXCM007:    Car, truck, or van: Carpooled: In 4-person carpool
+        AJXCM008:    Car, truck, or van: Carpooled: In 5- or 6-person carpool
+        AJXCM009:    Car, truck, or van: Carpooled: In 7-or-more-person carpool
+        AJXCM010:    Public transportation (excluding taxicab)
+        AJXCM011:    Public transportation (excluding taxicab): Bus or trolley bus
+        AJXCM012:    Public transportation (excluding taxicab): Streetcar or trolley car (carro publico in Puerto Rico)
+        AJXCM013:    Public transportation (excluding taxicab): Subway or elevated
+        AJXCM014:    Public transportation (excluding taxicab): Railroad
+        AJXCM015:    Public transportation (excluding taxicab): Ferryboat
+        AJXCM016:    Taxicab
+        AJXCM017:    Motorcycle
+        AJXCM018:    Bicycle
+        AJXCM019:    Walked
+        AJXCM020:    Other means
+        AJXCM021:    Worked at home
+ 
+    Table 7:     Educational Attainment for the Population 25 Years and Over
+    Universe:    Population 25 years and over
+    Source code: B15003
+    NHGIS code:  AJYP
+        AJYPM001:    Total
+        AJYPM002:    No schooling completed
+        AJYPM003:    Nursery school
+        AJYPM004:    Kindergarten
+        AJYPM005:    1st grade
+        AJYPM006:    2nd grade
+        AJYPM007:    3rd grade
+        AJYPM008:    4th grade
+        AJYPM009:    5th grade
+        AJYPM010:    6th grade
+        AJYPM011:    7th grade
+        AJYPM012:    8th grade
+        AJYPM013:    9th grade
+        AJYPM014:    10th grade
+        AJYPM015:    11th grade
+        AJYPM016:    12th grade, no diploma
+        AJYPM017:    Regular high school diploma
+        AJYPM018:    GED or alternative credential
+        AJYPM019:    Some college, less than 1 year
+        AJYPM020:    Some college, 1 or more years, no degree
+        AJYPM021:    Associate's degree
+        AJYPM022:    Bachelor's degree
+        AJYPM023:    Master's degree
+        AJYPM024:    Professional school degree
+        AJYPM025:    Doctorate degree
+ 
+    Table 8:     Median Household Income in the Past 12 Months (in 2018 Inflation-Adjusted Dollars)
+    Universe:    Households
+    Source code: B19013
+    NHGIS code:  AJZA
+        AJZAM001:    Median household income in the past 12 months (in 2018 inflation-adjusted dollars)
+ 
+    Table 9:     Per Capita Income in the Past 12 Months (in 2018 Inflation-Adjusted Dollars)
+    Universe:    Total population
+    Source code: B19301
+    NHGIS code:  AJ0E
+        AJ0EM001:    Per capita income in the past 12 months (in 2018 inflation-adjusted dollars)
+ 
+    Table 10:    Sex by Occupation for the Civilian Employed Population 16 Years and Over
+    Universe:    Civilian employed population 16 years and over
+    Source code: C24010
+    NHGIS code:  AJ1F
+        AJ1FM001:    Total
+        AJ1FM002:    Male
+        AJ1FM003:    Male: Management, business, science, and arts occupations
+        AJ1FM004:    Male: Management, business, science, and arts occupations: Management, business, and financial occupations
+        AJ1FM005:    Male: Management, business, science, and arts occupations: Management, business, and financial occupations: Management occupations
+        AJ1FM006:    Male: Management, business, science, and arts occupations: Management, business, and financial occupations: Business and financial operations occupations
+        AJ1FM007:    Male: Management, business, science, and arts occupations: Computer, engineering, and science occupations
+        AJ1FM008:    Male: Management, business, science, and arts occupations: Computer, engineering, and science occupations: Computer and mathematical occupations
+        AJ1FM009:    Male: Management, business, science, and arts occupations: Computer, engineering, and science occupations: Architecture and engineering occupations
+        AJ1FM010:    Male: Management, business, science, and arts occupations: Computer, engineering, and science occupations: Life, physical, and social science occupations
+        AJ1FM011:    Male: Management, business, science, and arts occupations: Education, legal, community service, arts, and media occupations
+        AJ1FM012:    Male: Management, business, science, and arts occupations: Education, legal, community service, arts, and media occupations: Community and social service occupations
+        AJ1FM013:    Male: Management, business, science, and arts occupations: Education, legal, community service, arts, and media occupations: Legal occupations
+        AJ1FM014:    Male: Management, business, science, and arts occupations: Education, legal, community service, arts, and media occupations: Educational instruction, and library occupations
+        AJ1FM015:    Male: Management, business, science, and arts occupations: Education, legal, community service, arts, and media occupations: Arts, design, entertainment, sports, and media occupations
+        AJ1FM016:    Male: Management, business, science, and arts occupations: Healthcare practitioners and technical occupations
+        AJ1FM017:    Male: Management, business, science, and arts occupations: Healthcare practitioners and technical occupations: Health diagnosing and treating practitioners and other technical occupations
+        AJ1FM018:    Male: Management, business, science, and arts occupations: Healthcare practitioners and technical occupations: Health technologists and technicians
+        AJ1FM019:    Male: Service occupations
+        AJ1FM020:    Male: Service occupations: Healthcare support occupations
+        AJ1FM021:    Male: Service occupations: Protective service occupations
+        AJ1FM022:    Male: Service occupations: Protective service occupations: Firefighting and prevention, and other protective service workers including supervisors
+        AJ1FM023:    Male: Service occupations: Protective service occupations: Law enforcement workers including supervisors
+        AJ1FM024:    Male: Service occupations: Food preparation and serving related occupations
+        AJ1FM025:    Male: Service occupations: Building and grounds cleaning and maintenance occupations
+        AJ1FM026:    Male: Service occupations: Personal care and service occupations
+        AJ1FM027:    Male: Sales and office occupations
+        AJ1FM028:    Male: Sales and office occupations: Sales and related occupations
+        AJ1FM029:    Male: Sales and office occupations: Office and administrative support occupations
+        AJ1FM030:    Male: Natural resources, construction, and maintenance occupations
+        AJ1FM031:    Male: Natural resources, construction, and maintenance occupations: Farming, fishing, and forestry occupations
+        AJ1FM032:    Male: Natural resources, construction, and maintenance occupations: Construction and extraction occupations
+        AJ1FM033:    Male: Natural resources, construction, and maintenance occupations: Installation, maintenance, and repair occupations
+        AJ1FM034:    Male: Production, transportation, and material moving occupations
+        AJ1FM035:    Male: Production, transportation, and material moving occupations: Production occupations
+        AJ1FM036:    Male: Production, transportation, and material moving occupations: Transportation occupations
+        AJ1FM037:    Male: Production, transportation, and material moving occupations: Material moving occupations
+        AJ1FM038:    Female
+        AJ1FM039:    Female: Management, business, science, and arts occupations
+        AJ1FM040:    Female: Management, business, science, and arts occupations: Management, business, and financial occupations
+        AJ1FM041:    Female: Management, business, science, and arts occupations: Management, business, and financial occupations: Management occupations
+        AJ1FM042:    Female: Management, business, science, and arts occupations: Management, business, and financial occupations: Business and financial operations occupations
+        AJ1FM043:    Female: Management, business, science, and arts occupations: Computer, engineering, and science occupations
+        AJ1FM044:    Female: Management, business, science, and arts occupations: Computer, engineering, and science occupations: Computer and mathematical occupations
+        AJ1FM045:    Female: Management, business, science, and arts occupations: Computer, engineering, and science occupations: Architecture and engineering occupations
+        AJ1FM046:    Female: Management, business, science, and arts occupations: Computer, engineering, and science occupations: Life, physical, and social science occupations
+        AJ1FM047:    Female: Management, business, science, and arts occupations: Education, legal, community service, arts, and media occupations
+        AJ1FM048:    Female: Management, business, science, and arts occupations: Education, legal, community service, arts, and media occupations: Community and social service occupations
+        AJ1FM049:    Female: Management, business, science, and arts occupations: Education, legal, community service, arts, and media occupations: Legal occupations
+        AJ1FM050:    Female: Management, business, science, and arts occupations: Education, legal, community service, arts, and media occupations: Educational instruction, and library occupations
+        AJ1FM051:    Female: Management, business, science, and arts occupations: Education, legal, community service, arts, and media occupations: Arts, design, entertainment, sports, and media occupations
+        AJ1FM052:    Female: Management, business, science, and arts occupations: Healthcare practitioners and technical occupations
+        AJ1FM053:    Female: Management, business, science, and arts occupations: Healthcare practitioners and technical occupations: Health diagnosing and treating practitioners and other technical occupations
+        AJ1FM054:    Female: Management, business, science, and arts occupations: Healthcare practitioners and technical occupations: Health technologists and technicians
+        AJ1FM055:    Female: Service occupations
+        AJ1FM056:    Female: Service occupations: Healthcare support occupations
+        AJ1FM057:    Female: Service occupations: Protective service occupations
+        AJ1FM058:    Female: Service occupations: Protective service occupations: Firefighting and prevention, and other protective service workers including supervisors
+        AJ1FM059:    Female: Service occupations: Protective service occupations: Law enforcement workers including supervisors
+        AJ1FM060:    Female: Service occupations: Food preparation and serving related occupations
+        AJ1FM061:    Female: Service occupations: Building and grounds cleaning and maintenance occupations
+        AJ1FM062:    Female: Service occupations: Personal care and service occupations
+        AJ1FM063:    Female: Sales and office occupations
+        AJ1FM064:    Female: Sales and office occupations: Sales and related occupations
+        AJ1FM065:    Female: Sales and office occupations: Office and administrative support occupations
+        AJ1FM066:    Female: Natural resources, construction, and maintenance occupations
+        AJ1FM067:    Female: Natural resources, construction, and maintenance occupations: Farming, fishing, and forestry occupations
+        AJ1FM068:    Female: Natural resources, construction, and maintenance occupations: Construction and extraction occupations
+        AJ1FM069:    Female: Natural resources, construction, and maintenance occupations: Installation, maintenance, and repair occupations
+        AJ1FM070:    Female: Production, transportation, and material moving occupations
+        AJ1FM071:    Female: Production, transportation, and material moving occupations: Production occupations
+        AJ1FM072:    Female: Production, transportation, and material moving occupations: Transportation occupations
+        AJ1FM073:    Female: Production, transportation, and material moving occupations: Material moving occupations
+ 
+--------------------------------------------------------------------------------
+Citation and Use of NHGIS Data
+--------------------------------------------------------------------------------
+ 
+All persons are granted a limited license to use this documentation and the
+accompanying data, subject to the following conditions:
+
+* REDISTRIBUTION: You will not redistribute the data without permission.
+
+  You may publish a subset of the data to meet journal requirements for accessing 
+  data related to a particular publication. Contact us for permission for any other 
+  redistribution; we will consider requests for free and commercial redistribution.
+
+* CITATION: You will cite NHGIS appropriately.
+
+    * Publications and research reports employing NHGIS data (either tabular or GIS) 
+      should include the following citation:
+
+        Steven Manson, Jonathan Schroeder, David Van Riper, and Steven Ruggles. 
+        IPUMS National Historical Geographic Information System: Version 14.0 
+        [Database]. Minneapolis, MN: IPUMS. 2019. 
+        http://doi.org/10.18128/D050.V14.0
+
+    * Publications and research reports employing school attendance areas data 
+      (either tabular or GIS) must cite it appropriately. The citation should 
+      include the following:
+
+        The College of William and Mary and the Minnesota Population Center.
+        School Attendance Boundary Information System (SABINS): Version 1.0.
+        Minneapolis, MN: University of Minnesota 2011.
+
+    * For policy briefs, online resources, or articles in the popular press, we 
+      recommend that you cite the use of NHGIS data as follows:
+
+        IPUMS NHGIS, University of Minnesota, www.nhgis.org.
+
+    * If possible, citations involving school attendance areas should also include
+      the URL for the SABINS site:
+
+        http://www.sabinsdata.org/.
+
+These terms of use are a legally binding agreement. You can use the data only in 
+accordance with these terms, and any other use is a violation of the agreement. 
+Violations may result in revocation of the agreement and prohibition from using other 
+IPUMS data. If IPUMS or our partners are harmed from your violation, you are 
+responsible for all damages, including reasonable attorney's fees and expenses.
+        
+In addition, we request that users send us a copy of any publications, research
+reports, or educational material making use of the data or documentation.
+
+Send electronic material to: nhgis@umn.edu
+
+Printed matter should be sent to:
+
+    IPUMS NHGIS
+    Institute for Social Research and Data Innovation
+    University of Minnesota
+    50 Willey Hall
+    225 19th Ave S
+    Minneapolis, MN 55455

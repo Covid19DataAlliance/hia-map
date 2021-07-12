@@ -1,0 +1,271 @@
+--------------------------------------------------------------------------------
+Codebook for NHGIS data file 'nhgis0003_ds240_20185_2018_county'
+--------------------------------------------------------------------------------
+ 
+Contents
+    - Data Summary
+    - Data Dictionary
+    - Citation and Use
+ 
+Additional documentation on NHGIS data sources is available at: 
+    https://www.nhgis.org/documentation/tabular-data 
+ 
+--------------------------------------------------------------------------------
+Data Summary
+--------------------------------------------------------------------------------
+ 
+Year:             2014-2018
+Geographic level: County (by State)
+Dataset:          2018 American Community Survey: 5-Year Data [2014-2018, Tracts & Larger Areas]
+   NHGIS code:    2014_2018_ACS5b
+   NHGIS ID:      ds240
+Breakdown(s):     Geographic Subarea:
+                     Total area (00)
+Data type(s):     (E) Estimates
+                  (M) Margins of error
+ 
+Tables:
+ 
+1. Poverty Status in the Past 12 Months by Sex by Age
+   Universe:    Population for whom poverty status is determined
+   Source code: B17001
+   NHGIS code:  AKD1
+ 
+--------------------------------------------------------------------------------
+Data Dictionary
+--------------------------------------------------------------------------------
+ 
+Context Fields 
+        GISJOIN:     GIS Join Match Code
+        YEAR:        Data File Year
+        REGIONA:     Region Code
+        DIVISIONA:   Division Code
+        STATE:       State Name
+        STATEA:      State Code
+        COUNTY:      County Name
+        COUNTYA:     County Code
+        COUSUBA:     County Subdivision Code
+        PLACEA:      Place Code
+        TRACTA:      Census Tract Code
+        CONCITA:     Consolidated City Code
+        AIANHHA:     American Indian Area/Alaska Native Area/Hawaiian Home Land Code
+        RES_ONLYA:   American Indian Area/Alaska Native Area (Reservation or Statistical Entity Only) Code
+        TRUSTA:      American Indian Area (Off-Reservation Trust Land Only)/Hawaiian Home Land Code
+        AITSCEA:     Tribal Subdivision/Remainder Code
+        ANRCA:       Alaska Native Regional Corporation Code
+        CBSAA:       Metropolitan Statistical Area/Micropolitan Statistical Area Code
+        CSAA:        Combined Statistical Area Code
+        METDIVA:     Metropolitan Division Code
+        NECTAA:      New England City and Town Area Code
+        CNECTAA:     Combined New England City and Town Area Code
+        NECTADIVA:   New England City and Town Area Division Code
+        UAA:         Urban Area Code
+        CDCURRA:     Congressional District (2019-2021, 116th Congress) Code
+        SLDUA:       State Legislative District (Upper Chamber) Code
+        SLDLA:       State Legislative District (Lower Chamber) Code
+        ZCTA5A:      5-Digit ZIP Code Tabulation Area Code
+        SUBMCDA:     Subminor Civil Division Code
+        SDELMA:      School District (Elementary)/Remainder Code
+        SDSECA:      School District (Secondary)/Remainder Code
+        SDUNIA:      School District (Unified)/Remainder Code
+        PUMA5A:      Public Use Microdata Sample Area (PUMA) Code
+        BTTRA:       Tribal Census Tract Code
+ 
+Data Type (E):
+    Estimates
+ 
+        NAME_E:      Area Name
+ 
+    Table 1:     Poverty Status in the Past 12 Months by Sex by Age
+    Universe:    Population for whom poverty status is determined
+    Source code: B17001
+    NHGIS code:  AKD1
+        AKD1E001:    Total
+        AKD1E002:    Income in the past 12 months below poverty level
+        AKD1E003:    Income in the past 12 months below poverty level: Male
+        AKD1E004:    Income in the past 12 months below poverty level: Male: Under 5 years
+        AKD1E005:    Income in the past 12 months below poverty level: Male: 5 years
+        AKD1E006:    Income in the past 12 months below poverty level: Male: 6 to 11 years
+        AKD1E007:    Income in the past 12 months below poverty level: Male: 12 to 14 years
+        AKD1E008:    Income in the past 12 months below poverty level: Male: 15 years
+        AKD1E009:    Income in the past 12 months below poverty level: Male: 16 and 17 years
+        AKD1E010:    Income in the past 12 months below poverty level: Male: 18 to 24 years
+        AKD1E011:    Income in the past 12 months below poverty level: Male: 25 to 34 years
+        AKD1E012:    Income in the past 12 months below poverty level: Male: 35 to 44 years
+        AKD1E013:    Income in the past 12 months below poverty level: Male: 45 to 54 years
+        AKD1E014:    Income in the past 12 months below poverty level: Male: 55 to 64 years
+        AKD1E015:    Income in the past 12 months below poverty level: Male: 65 to 74 years
+        AKD1E016:    Income in the past 12 months below poverty level: Male: 75 years and over
+        AKD1E017:    Income in the past 12 months below poverty level: Female
+        AKD1E018:    Income in the past 12 months below poverty level: Female: Under 5 years
+        AKD1E019:    Income in the past 12 months below poverty level: Female: 5 years
+        AKD1E020:    Income in the past 12 months below poverty level: Female: 6 to 11 years
+        AKD1E021:    Income in the past 12 months below poverty level: Female: 12 to 14 years
+        AKD1E022:    Income in the past 12 months below poverty level: Female: 15 years
+        AKD1E023:    Income in the past 12 months below poverty level: Female: 16 and 17 years
+        AKD1E024:    Income in the past 12 months below poverty level: Female: 18 to 24 years
+        AKD1E025:    Income in the past 12 months below poverty level: Female: 25 to 34 years
+        AKD1E026:    Income in the past 12 months below poverty level: Female: 35 to 44 years
+        AKD1E027:    Income in the past 12 months below poverty level: Female: 45 to 54 years
+        AKD1E028:    Income in the past 12 months below poverty level: Female: 55 to 64 years
+        AKD1E029:    Income in the past 12 months below poverty level: Female: 65 to 74 years
+        AKD1E030:    Income in the past 12 months below poverty level: Female: 75 years and over
+        AKD1E031:    Income in the past 12 months at or above poverty level
+        AKD1E032:    Income in the past 12 months at or above poverty level: Male
+        AKD1E033:    Income in the past 12 months at or above poverty level: Male: Under 5 years
+        AKD1E034:    Income in the past 12 months at or above poverty level: Male: 5 years
+        AKD1E035:    Income in the past 12 months at or above poverty level: Male: 6 to 11 years
+        AKD1E036:    Income in the past 12 months at or above poverty level: Male: 12 to 14 years
+        AKD1E037:    Income in the past 12 months at or above poverty level: Male: 15 years
+        AKD1E038:    Income in the past 12 months at or above poverty level: Male: 16 and 17 years
+        AKD1E039:    Income in the past 12 months at or above poverty level: Male: 18 to 24 years
+        AKD1E040:    Income in the past 12 months at or above poverty level: Male: 25 to 34 years
+        AKD1E041:    Income in the past 12 months at or above poverty level: Male: 35 to 44 years
+        AKD1E042:    Income in the past 12 months at or above poverty level: Male: 45 to 54 years
+        AKD1E043:    Income in the past 12 months at or above poverty level: Male: 55 to 64 years
+        AKD1E044:    Income in the past 12 months at or above poverty level: Male: 65 to 74 years
+        AKD1E045:    Income in the past 12 months at or above poverty level: Male: 75 years and over
+        AKD1E046:    Income in the past 12 months at or above poverty level: Female
+        AKD1E047:    Income in the past 12 months at or above poverty level: Female: Under 5 years
+        AKD1E048:    Income in the past 12 months at or above poverty level: Female: 5 years
+        AKD1E049:    Income in the past 12 months at or above poverty level: Female: 6 to 11 years
+        AKD1E050:    Income in the past 12 months at or above poverty level: Female: 12 to 14 years
+        AKD1E051:    Income in the past 12 months at or above poverty level: Female: 15 years
+        AKD1E052:    Income in the past 12 months at or above poverty level: Female: 16 and 17 years
+        AKD1E053:    Income in the past 12 months at or above poverty level: Female: 18 to 24 years
+        AKD1E054:    Income in the past 12 months at or above poverty level: Female: 25 to 34 years
+        AKD1E055:    Income in the past 12 months at or above poverty level: Female: 35 to 44 years
+        AKD1E056:    Income in the past 12 months at or above poverty level: Female: 45 to 54 years
+        AKD1E057:    Income in the past 12 months at or above poverty level: Female: 55 to 64 years
+        AKD1E058:    Income in the past 12 months at or above poverty level: Female: 65 to 74 years
+        AKD1E059:    Income in the past 12 months at or above poverty level: Female: 75 years and over
+ 
+Data Type (M):
+    Margins of error
+ 
+        NAME_M:      Area Name
+ 
+    Table 1:     Poverty Status in the Past 12 Months by Sex by Age
+    Universe:    Population for whom poverty status is determined
+    Source code: B17001
+    NHGIS code:  AKD1
+        AKD1M001:    Total
+        AKD1M002:    Income in the past 12 months below poverty level
+        AKD1M003:    Income in the past 12 months below poverty level: Male
+        AKD1M004:    Income in the past 12 months below poverty level: Male: Under 5 years
+        AKD1M005:    Income in the past 12 months below poverty level: Male: 5 years
+        AKD1M006:    Income in the past 12 months below poverty level: Male: 6 to 11 years
+        AKD1M007:    Income in the past 12 months below poverty level: Male: 12 to 14 years
+        AKD1M008:    Income in the past 12 months below poverty level: Male: 15 years
+        AKD1M009:    Income in the past 12 months below poverty level: Male: 16 and 17 years
+        AKD1M010:    Income in the past 12 months below poverty level: Male: 18 to 24 years
+        AKD1M011:    Income in the past 12 months below poverty level: Male: 25 to 34 years
+        AKD1M012:    Income in the past 12 months below poverty level: Male: 35 to 44 years
+        AKD1M013:    Income in the past 12 months below poverty level: Male: 45 to 54 years
+        AKD1M014:    Income in the past 12 months below poverty level: Male: 55 to 64 years
+        AKD1M015:    Income in the past 12 months below poverty level: Male: 65 to 74 years
+        AKD1M016:    Income in the past 12 months below poverty level: Male: 75 years and over
+        AKD1M017:    Income in the past 12 months below poverty level: Female
+        AKD1M018:    Income in the past 12 months below poverty level: Female: Under 5 years
+        AKD1M019:    Income in the past 12 months below poverty level: Female: 5 years
+        AKD1M020:    Income in the past 12 months below poverty level: Female: 6 to 11 years
+        AKD1M021:    Income in the past 12 months below poverty level: Female: 12 to 14 years
+        AKD1M022:    Income in the past 12 months below poverty level: Female: 15 years
+        AKD1M023:    Income in the past 12 months below poverty level: Female: 16 and 17 years
+        AKD1M024:    Income in the past 12 months below poverty level: Female: 18 to 24 years
+        AKD1M025:    Income in the past 12 months below poverty level: Female: 25 to 34 years
+        AKD1M026:    Income in the past 12 months below poverty level: Female: 35 to 44 years
+        AKD1M027:    Income in the past 12 months below poverty level: Female: 45 to 54 years
+        AKD1M028:    Income in the past 12 months below poverty level: Female: 55 to 64 years
+        AKD1M029:    Income in the past 12 months below poverty level: Female: 65 to 74 years
+        AKD1M030:    Income in the past 12 months below poverty level: Female: 75 years and over
+        AKD1M031:    Income in the past 12 months at or above poverty level
+        AKD1M032:    Income in the past 12 months at or above poverty level: Male
+        AKD1M033:    Income in the past 12 months at or above poverty level: Male: Under 5 years
+        AKD1M034:    Income in the past 12 months at or above poverty level: Male: 5 years
+        AKD1M035:    Income in the past 12 months at or above poverty level: Male: 6 to 11 years
+        AKD1M036:    Income in the past 12 months at or above poverty level: Male: 12 to 14 years
+        AKD1M037:    Income in the past 12 months at or above poverty level: Male: 15 years
+        AKD1M038:    Income in the past 12 months at or above poverty level: Male: 16 and 17 years
+        AKD1M039:    Income in the past 12 months at or above poverty level: Male: 18 to 24 years
+        AKD1M040:    Income in the past 12 months at or above poverty level: Male: 25 to 34 years
+        AKD1M041:    Income in the past 12 months at or above poverty level: Male: 35 to 44 years
+        AKD1M042:    Income in the past 12 months at or above poverty level: Male: 45 to 54 years
+        AKD1M043:    Income in the past 12 months at or above poverty level: Male: 55 to 64 years
+        AKD1M044:    Income in the past 12 months at or above poverty level: Male: 65 to 74 years
+        AKD1M045:    Income in the past 12 months at or above poverty level: Male: 75 years and over
+        AKD1M046:    Income in the past 12 months at or above poverty level: Female
+        AKD1M047:    Income in the past 12 months at or above poverty level: Female: Under 5 years
+        AKD1M048:    Income in the past 12 months at or above poverty level: Female: 5 years
+        AKD1M049:    Income in the past 12 months at or above poverty level: Female: 6 to 11 years
+        AKD1M050:    Income in the past 12 months at or above poverty level: Female: 12 to 14 years
+        AKD1M051:    Income in the past 12 months at or above poverty level: Female: 15 years
+        AKD1M052:    Income in the past 12 months at or above poverty level: Female: 16 and 17 years
+        AKD1M053:    Income in the past 12 months at or above poverty level: Female: 18 to 24 years
+        AKD1M054:    Income in the past 12 months at or above poverty level: Female: 25 to 34 years
+        AKD1M055:    Income in the past 12 months at or above poverty level: Female: 35 to 44 years
+        AKD1M056:    Income in the past 12 months at or above poverty level: Female: 45 to 54 years
+        AKD1M057:    Income in the past 12 months at or above poverty level: Female: 55 to 64 years
+        AKD1M058:    Income in the past 12 months at or above poverty level: Female: 65 to 74 years
+        AKD1M059:    Income in the past 12 months at or above poverty level: Female: 75 years and over
+ 
+--------------------------------------------------------------------------------
+Citation and Use of NHGIS Data
+--------------------------------------------------------------------------------
+ 
+All persons are granted a limited license to use this documentation and the
+accompanying data, subject to the following conditions:
+
+* REDISTRIBUTION: You will not redistribute the data without permission.
+
+  You may publish a subset of the data to meet journal requirements for accessing 
+  data related to a particular publication. Contact us for permission for any other 
+  redistribution; we will consider requests for free and commercial redistribution.
+
+* CITATION: You will cite NHGIS appropriately.
+
+    * Publications and research reports employing NHGIS data (either tabular or GIS) 
+      should include the following citation:
+
+        Steven Manson, Jonathan Schroeder, David Van Riper, and Steven Ruggles. 
+        IPUMS National Historical Geographic Information System: Version 14.0 
+        [Database]. Minneapolis, MN: IPUMS. 2019. 
+        http://doi.org/10.18128/D050.V14.0
+
+    * Publications and research reports employing school attendance areas data 
+      (either tabular or GIS) must cite it appropriately. The citation should 
+      include the following:
+
+        The College of William and Mary and the Minnesota Population Center.
+        School Attendance Boundary Information System (SABINS): Version 1.0.
+        Minneapolis, MN: University of Minnesota 2011.
+
+    * For policy briefs, online resources, or articles in the popular press, we 
+      recommend that you cite the use of NHGIS data as follows:
+
+        IPUMS NHGIS, University of Minnesota, www.nhgis.org.
+
+    * If possible, citations involving school attendance areas should also include
+      the URL for the SABINS site:
+
+        http://www.sabinsdata.org/.
+
+These terms of use are a legally binding agreement. You can use the data only in 
+accordance with these terms, and any other use is a violation of the agreement. 
+Violations may result in revocation of the agreement and prohibition from using other 
+IPUMS data. If IPUMS or our partners are harmed from your violation, you are 
+responsible for all damages, including reasonable attorney's fees and expenses.
+        
+In addition, we request that users send us a copy of any publications, research
+reports, or educational material making use of the data or documentation.
+
+Send electronic material to: nhgis@umn.edu
+
+Printed matter should be sent to:
+
+    IPUMS NHGIS
+    Institute for Social Research and Data Innovation
+    University of Minnesota
+    50 Willey Hall
+    225 19th Ave S
+    Minneapolis, MN 55455

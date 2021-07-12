@@ -1,0 +1,112 @@
+---
+title: "data work flow"
+author: "Grant Morrison"
+date: "5/26/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+
+```{r}
+data <- read.csv("nhgis0003_csv/nhgis0003_ds240_20185_2018_county.csv")
+```
+
+
+```{r}
+data2 <- read.csv("nhgis0003_csv/nhgis0003_ds239_20185_2018_county.csv")
+```
+
+
+
+```{r}
+population <- data2$AJWBE001
+percent_male <- data2$AJWBE002 / population * 100
+percent_female <- data2$AJWBE026 / population * 100
+percent_black <- data2$AJWQE001 / population * 100
+percent_asian <- data2$AJWSE001 / population * 100
+percent_hispanic <- data2$AJWWE003 / population * 100
+percent_public_transportation <- data2$AJXCE010 / data2$AJXCE001 * 100
+percent_hs <- (data2$AJYPE017 + data2$AJYPE018 + data2$AJYPE019 + data2$AJYPE020 + data2$AJYPE021 + data2$AJYPE022 + data2$AJYPE023 + data2$AJYPE024 + data2$AJYPE025) / data2$AJYPE001 * 100
+
+percent_bachalors <- (data2$AJYPE022 + data2$AJYPE023 + data2$AJYPE024 + data2$AJYPE025) / data2$AJYPE001 * 100
+
+household_income <- data2$AJZAM001 * 12
+per_capita_income <- data2$AJ0EM001 * 12
+county <- base::as.character(data2$COUNTY)
+percent_health_workers <- (data2$AJ1FE055 + data2$AJ1FE020)/ data2$AJ1FE001 * 100
+
+percent_over65 <- (data2$AJWBE044 + data2$AJWBE045 + data2$AJWBE046 + data2$AJWBE047 + data2$AJWBE048 + data2$AJWBE049 + data2$AJWBE020 + data2$AJWBE021 + data2$AJWBE022 + data2$AJWBE023 + data2$AJWBE024 + data2$AJWBE025) / population * 100
+GEOID <- data2$GISJOIN
+
+
+df <- data.frame(population,percent_male,percent_female,percent_black,percent_asian,percent_hispanic, percent_public_transportation,percent_hs,percent_bachalors,household_income,per_capita_income,percent_health_workers,percent_over65,GEOID,county)
+
+df$county <- base::as.character(df$county)
+
+summary(household_income)
+summary(per_capita_income)
+```
+
+
+
+```{r}
+library(sf)
+bound <- st_read("cb_2018_us_county_20m/cb_2018_us_county_20m.shp")
+```
+
+
+
+```{r}
+library(tidyverse)
+bound$GEOID <- as.numeric(bound$GEOID)
+df$GEOID <- as.numeric(df$GEOID)
+full_data <- left_join(bound,df,by="GEOID")
+
+
+full_data$pop_density <- full_data$population / (full_data$ALAND / 1000000)
+
+full_data <- full_data %>% select(-ALAND,-AWATER,-LSAD)
+
+st_write(full_data,"demographic.shp",append = FALSE)
+
+
+```
+
+```{r}
+
+
+tmap_mode("plot")
+
+
+state <- full_data %>% filter(STATEFP == "72")
+
+
+plot_data <- full_data %>% filter(STATEFP != "02" & STATEFP !="15" & STATEFP !="72")
+
+mymap <- tm_shape(plot_data) +
+  tm_fill("percent_hispanic", palette = "Blues",style = "jenks") +
+  tm_borders(lwd = .2, col = "black") + 
+  tm_layout(legend.outside = TRUE)
+
+
+tmap_leaflet(mymap)
+tmap_mode("view")
+
+
+
+```
+
+
+
+
+
+
+
+
+
+
